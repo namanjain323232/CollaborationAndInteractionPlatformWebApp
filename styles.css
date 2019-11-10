@@ -1,4 +1,6 @@
-
+body{
+    background-color: pink;
+}
 
 /* h1{
     color: #fff;
@@ -20,6 +22,7 @@
 ul{
     list-style-type: none;
     padding: 0;
+    /* background-color: turquoise; */
 }
 
 li{
@@ -28,9 +31,11 @@ li{
     color: #555;
     padding: 50px;
     position: relative;
+    /* background-color: antiquewhite; */
     border-bottom: 1px solid #e6e6e6;
     text-transform: uppercase;
     transition: all 0.3s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* li:nth-child(2){
@@ -58,18 +63,26 @@ padding: 3px 5px;
 }
 li span:nth-child(2){
     color: #999;
-margin-left: 50%;
-border-radius: 5px 10px;
-padding: 3px 5px;
+/* background-color: black; */
+/* margin-left: 50%; */
+/* border-radius: 5px 10px; */
+/* padding: 3px 5px; */
 }
 li span:nth-child(4){
     color: #999;
     display: block;
+/* background-color:black; */
 margin-bottom: 0.3rem;
 }
 li span:nth-child(5){
     color: #999;
     display: block;
+/* background-color: black; */
+}
+li span:nth-child(1){
+    color: #999;
+    display: block;
+/* background-color: black; */
 }
 
 li div{

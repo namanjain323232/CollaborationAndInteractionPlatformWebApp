@@ -11,12 +11,12 @@ function renderCafe(doc){
     let people = document.createElement('span');
     let desc2 = document.createElement('span');
     li.setAttribute('data-id', doc.id);
-    name.textContent = doc.data().name;
-    city.textContent = doc.data().city;
+    name.textContent = 'Professor Name : ' + doc.data().name;
+    city.textContent = 'Project Title : ' + doc.data().city;
     cross.textContent = 'x';
-    desc.textContent = doc.data().desc;
-    people.textContent = doc.data().people;
-    desc2.textContent = doc.data().desc2;
+    desc.textContent = 'Skills Required : ' + doc.data().desc;
+    people.textContent = 'Contact Information : ' + doc.data().people;
+    desc2.textContent = 'Project Description : ' + doc.data().desc2;
   
     li.appendChild(name);
     li.appendChild(city);
@@ -48,8 +48,8 @@ form.addEventListener('submit', (e) => {
     db.collection('cafe').add({
         name: form.name.value,
         city: form.city.value,
-        desc: form.name.value,
-        people: form.city.value,
+        desc: form.desc.value,
+        people: form.people.value,
         desc2: form.desc2.value
     });
     form.name.value = '';
