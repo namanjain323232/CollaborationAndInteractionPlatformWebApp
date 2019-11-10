@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+body{
+    /* background: #eab0dc; */
+    font-family: ubuntu;
+}
+>>>>>>> 48962d7a96478ba0e574f3fa2dff0d9c74efef86
 
 
 /* h1{
@@ -30,11 +37,10 @@ li{
     padding: 100px;
     position: relative;
     border-bottom: 1px solid #e6e6e6;
-    height: 92px;
     text-transform: uppercase;
 }
 
-/* li:nth-child(even){
+/* li:nth-child(){
     padding: 20px;
     background: #f2f2f2;
 } */
@@ -49,6 +55,7 @@ li span{
     margin-top: 6px;
     color: #999;
 } */
+
 
 li div{
     position: absolute;
