@@ -9,13 +9,14 @@ function renderCafe(doc){
     let cross = document.createElement('div');
     let desc = document.createElement('span');
     let people = document.createElement('span');
-
+    let desc2 = document.createElement('span');
     li.setAttribute('data-id', doc.id);
     name.textContent = doc.data().name;
     city.textContent = doc.data().city;
     cross.textContent = 'x';
     desc.textContent = doc.data().desc;
     people.textContent = doc.data().people;
+    desc2.textContent = doc.data().desc2;
   
     li.appendChild(name);
     li.appendChild(city);
@@ -23,6 +24,7 @@ function renderCafe(doc){
 
     li.appendChild(desc);
     li.appendChild(people);
+    li.appendChild(desc2);
     cafeList.appendChild(li);
 
     // deleting data
@@ -47,12 +49,14 @@ form.addEventListener('submit', (e) => {
         name: form.name.value,
         city: form.city.value,
         desc: form.name.value,
-        people: form.city.value
+        people: form.city.value,
+        desc2: form.desc2.value
     });
     form.name.value = '';
     form.city.value = '';
     form.desc.value = '';
     form.people.value = '';
+    form.desc2.value = '';
 });
 
 // real-time listener
