@@ -46,8 +46,8 @@ form.addEventListener('submit', (e) => {
     db.collection('cafe').add({
         name: form.name.value,
         city: form.city.value,
-        desc: form.name.value,
-        people: form.city.value
+        desc: form.desc.value,
+        people: form.people.value
     });
     form.name.value = '';
     form.city.value = '';
